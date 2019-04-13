@@ -30,6 +30,9 @@ sudo systemctl enable xinetd
 sudo systemctl start xinetd
 sudo yum -y install net-tools
 sudo yum -y install traceroute
+sudo yum -y install lsof
+sudo yum -y install sysstat
+sudo yum -y install nc 
 ```
 * Restart server
 ```bash
