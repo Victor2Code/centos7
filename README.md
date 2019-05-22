@@ -1,5 +1,5 @@
 # centos7
-centos7 Initialization script (Google Cloud VM instance)
+centos7 Initialization script (Google Cloud VM instance)<br>
 for system administrators
 
 # Steps
@@ -37,6 +37,7 @@ sudo yum -y install nc
 sudo yum -y install tcpdump
 sudo yum -y install tree
 sudo yum -y install bind-utils
+sudo yum -y install nmap
 ```
 * Restart server
 ```bash
