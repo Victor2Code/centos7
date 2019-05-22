@@ -34,6 +34,7 @@ sudo yum -y install lsof
 sudo yum -y install sysstat
 sudo yum -y install nc 
 sudo yum -y install tcpdump
+sudo yum -y install tree
 ```
 * Restart server
 ```bash
