@@ -1,5 +1,6 @@
 # centos7
 centos7 Initialization script (Google Cloud VM instance)
+for system administrators
 
 # Steps
 * Disable firewalld, download and enable iptables
@@ -35,6 +36,7 @@ sudo yum -y install sysstat
 sudo yum -y install nc 
 sudo yum -y install tcpdump
 sudo yum -y install tree
+sudo yum -y install bind-utils
 ```
 * Restart server
 ```bash
