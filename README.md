@@ -38,6 +38,7 @@ sudo yum -y install tcpdump
 sudo yum -y install tree
 sudo yum -y install bind-utils
 sudo yum -y install nmap
+sudo yum -y install git
 ```
 * Restart server
 ```bash
