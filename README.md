@@ -40,6 +40,20 @@ sudo yum -y install bind-utils
 sudo yum -y install nmap
 sudo yum -y install git
 ```
+* Install Docker and Docker-compose
+```bash
+#Docker
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum -y install docker-ce
+sudo systemctl enable docker.service
+sudo systemctl start docker.service
+#Docker-compose
+sudo yum -y install epel-release
+sudo yum -y install python-pip
+sudo pip install docker-compose
+sudo yum upgrade python*
+```
 * Restart server
 ```bash
 sudo shutdown -r now
