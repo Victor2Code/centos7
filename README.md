@@ -24,6 +24,7 @@ sudo sed -i 's/^#Port 22/Port 6666/g' /etc/ssh/sshd_config
 * Download some common tools
 ```bash
 sudo yum -y install wget
+sudo yum -y install vim
 sudo yum -y install telnet telnet-server xinetd
 sudo systemctl enable telnet.socket
 sudo systemctl start telnet.socket
