@@ -55,6 +55,11 @@ sudo yum -y install python-pip
 sudo pip install docker-compose
 sudo yum upgrade python*
 ```
+* Install Nodejs
+```bash
+sudo yum -y install epel-release
+sudo yum -y install nodejs
+```
 * Restart server
 ```bash
 sudo shutdown -r now
