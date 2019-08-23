@@ -60,6 +60,16 @@ sudo yum upgrade python*
 sudo yum -y install epel-release
 sudo yum -y install nodejs
 ```
+
+* Add user and set password
+```bash
+useradd -s /bin/bash fuhx
+# In centos 7 the useradd command will automatically create the home folder, but in ubuntu 18.04 it will not
+echo "fuhx    ALL=(ALL)       ALL" >> /etc/sudoers
+echo fuhx:your_password | chpasswd
+# modify "your_password" to the real password
+```
+
 * Restart server
 ```bash
 sudo shutdown -r now
