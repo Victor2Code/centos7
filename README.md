@@ -40,6 +40,8 @@ sudo yum -y install tree
 sudo yum -y install bind-utils
 sudo yum -y install nmap
 sudo yum -y install git
+sudo yum -y install unzip
+sudo yum -y install zip
 ```
 * Install Docker and Docker-compose
 ```bash
