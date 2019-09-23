@@ -57,10 +57,13 @@ sudo yum -y install python-pip
 sudo pip install docker-compose
 sudo yum upgrade python*
 ```
-* Install Nodejs
+* Install Nodejs and Yarn
 ```bash
-sudo yum -y install epel-release
+#Check version of Node first on official website, current stable version is 10.x. Change below number accordingly in future
+curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
 sudo yum -y install nodejs
+curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+sudo yum -y install yarn
 ```
 
 * Add user and set password
