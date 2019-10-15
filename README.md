@@ -42,6 +42,7 @@ sudo yum -y install nmap
 sudo yum -y install git
 sudo yum -y install unzip
 sudo yum -y install zip
+sudo yum -y install sshpass
 ```
 * Install Docker and Docker-compose
 ```bash
