@@ -7,7 +7,7 @@ for system administrators
 ```bash
 sudo systemctl stop firewalld.service
 sudo systemctl disable firewalld.service 
-sudo yum install iptables-services
+sudo yum -y install iptables-services
 sudo sed -i '/--dport 22/a-A INPUT -p tcp -m state --state NEW -m tcp --dport 6666 -j ACCEPT' /etc/sysconfig/iptables
 sudo systemctl start iptables.service
 sudo systemctl enable iptables.service
