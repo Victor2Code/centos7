@@ -62,7 +62,7 @@ sudo yum upgrade python*
 * Install ntpdate and add to cron job
 ```bash
 yum -y install ntpdate
-(crontab -l 2>/dev/null; echo "*/5 * * * * ntpdate 1.ro.pool.ntp.org") | crontab -
+(crontab -l 2>/dev/null; echo "*/5 * * * * ntpdate 1.sg.pool.ntp.org") | crontab -
 # The 2>/dev/null is important so that you don't get the no crontab for username message that some *nixes produce if there are currently no crontab entries.
 ```
 
