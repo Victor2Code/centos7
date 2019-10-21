@@ -76,6 +76,25 @@ echo fuhx:your_password | chpasswd
 # modify "your_password" to the real password
 ```
 
+* Install Google authenticator and configure for user fuhx
+```bash
+sudo yum -y install google-authenticator
+# Turn on overall switch
+echo "auth required pam_google_authenticator.so" >> /etc/pam.d/sshd
+sed -i 's/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/g' /etc/ssh/sshd_config
+sudo systemctl restart sshd
+su fuhx
+# Configure google authenticator for fuhx
+google-authenticator << EOF
+y
+y
+y
+n
+y
+EOF
+exit
+```
+
 * Restart server
 ```bash
 sudo shutdown -r now
