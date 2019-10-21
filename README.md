@@ -58,6 +58,14 @@ sudo yum -y install python-pip
 sudo pip install docker-compose
 sudo yum upgrade python*
 ```
+
+* Install ntpdate and add to cron job
+```bash
+yum -y install ntpdate
+(crontab -l 2>/dev/null; echo "*/5 * * * * ntpdate 1.ro.pool.ntp.org") | crontab -
+# The 2>/dev/null is important so that you don't get the no crontab for username message that some *nixes produce if there are currently no crontab entries.
+```
+
 * Install Nodejs and Yarn
 ```bash
 #Check version of Node first on official website, current stable version is 10.x. Change below number accordingly in future
