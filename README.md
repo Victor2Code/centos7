@@ -43,6 +43,7 @@ sudo yum -y install git
 sudo yum -y install unzip
 sudo yum -y install zip
 sudo yum -y install sshpass
+sudo yum -y install pciutils
 ```
 * Install Docker and Docker-compose
 ```bash
